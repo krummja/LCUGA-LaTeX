@@ -1,0 +1,46 @@
+\documentclass[final, expex]{classdefs/uga}
+\graphicspath{figures/}
+
+% Publication info
+\pubyear{2020}
+\lcuga{6}
+
+% Set the starting page number
+% NOTE: This should always be an odd number
+\setcounter{page}{21} 
+
+% Title and author information
+\title[Some Cool Title]{Some Very Long And Interesting Cool Title}
+\author[Jane Smith \& John Everyman]{
+  \ugaauthor{Jane Smith \\ \institute{University of Nowhere}}
+  \AND
+  \ugaauthor{John Everyman \\ \institute{University of Someplace}}
+}
+
+% PDF metadata
+\pdfauthor{Jane Smith}
+\pdfauthor{John Everyman}
+\pdftitle{Some Very Long And Interesting Cool Title}
+\pdfkeywords{Semantics, Syntax, Morphology}
+
+% Best to use the master bibliography
+\addbibresource{test.bib}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+  % Add article abstract
+\end{abstract}
+\begin{keywords}
+  % Add keywords
+\end{keywords}
+
+% Use separate tex files for the body content
+% \input{introduction.tex}
+% \input{section1.tex}
+% \input{conclusion.tex}
+
+\clearpage
+\printbibliography
+\end{document}
